@@ -15,6 +15,9 @@ int main()
             if(render.event.type == sf::Event::TextEntered){
                 textBox.typedOn(render.event);
             }
+            if(render.event.type == sf::Event::KeyPressed){
+                textBox.navInText(render.event);
+            }
         }
         render.window.clear(sf::Color::Black);
         render.window.draw(textBox.textbox);
