@@ -47,8 +47,8 @@ public:
 
     void typedOn(sf::Event input){
         int charTyped = input.text.unicode;
-        //if(charTyped < 128){
+        if(charTyped < 128){
             inputLogic(charTyped);
-        //}
+        }
     }
 };
